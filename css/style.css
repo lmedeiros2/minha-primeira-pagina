@@ -82,13 +82,20 @@
   .sobre__titulo {
     font-size: 4rem;
     color: #C4C4C4;
+    padding-left: 40px;
   }
-  
+  .sobre-descricao{
+    width: 40%;
+    padding-left: 40px;
+    display: inline-block;
+    line-height: 1.5;
+  }
+
   .sobre-descricao,
   .sobre-habilidades {
     width: 40%;
     display: inline-block;
-    line-height: 1.5;
+    line-height: 1.4;
   }
   
   .sobre-descricao__destaque {
@@ -97,16 +104,19 @@
   
   .sobre-habilidades__titulo {
     font-size: 2.8rem;
+    margin-bottom: 6mm;
   }
   
   .sobre-habilidades {
     margin-left: 20rem;
+    margin-bottom: 5rem;
   }
   
   .sobre-habilidades__lista {
+    margin-top: -1mm;
     padding-left: 2rem;
     line-height: 2;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   
   .sobre-descricao__texto {
@@ -137,5 +147,224 @@
     margin-top: 3rem;
     padding: 1rem;
   }
-    
   
+/* TABLET AQUI */
+@media (max-width: 768px) {
+  /* HEADER BANNER */
+  .banner {
+    border: 2px solid white;
+    background: url(../img/Banner-bg2.png) center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    align-items: center;
+    padding-top: 10rem;
+    color: white;
+  }
+  .banner__titulo {
+    font-size: 4rem;
+  }
+  .banner__subtitulo {
+    font-size: 2rem;
+  }
+  .btn {
+    border-radius: 3rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  /* SEÇÃO SOBRE */
+  
+  .sobre__titulo {
+    font-size: 3rem;
+    color: #C4C4C4;
+    padding-left: 40px;
+  }
+  .sobre-descricao{
+    width: 40%;
+    padding-left: 40px;
+    display: inline-block;
+    line-height: 1.5;
+  }
+
+  .sobre-descricao,
+  .sobre-habilidades {
+    width: 40%;
+    display: inline-block;
+    line-height: 1.4;
+    margin-bottom: 0px;
+  }
+  
+  .sobre-descricao__destaque {
+    font-size: 1.8rem;
+  }
+
+  .sobre-descricao__texto {
+    font-size: 1.5rem;
+  }
+  
+  .sobre-habilidades__titulo {
+    margin-top: 1mm;
+    font-size: 2rem;
+    margin-bottom: 4mm;
+  }
+  
+  .sobre-habilidades {
+    margin-left: 10rem;
+    padding: 48px
+  }
+  
+  .sobre-habilidades__lista {
+    margin-top: 1mm;
+    padding-left: 2rem;
+    line-height: 2;
+    font-size: 1.5rem;
+  }
+  /* REDES SOCIAIS */
+  .footer {
+    text-align: center;
+  }
+
+  .redes-sociais__link {
+    display: inline-block;
+    width: 20%;
+    background-color: #7E459B;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    text-align: center;
+    color: white;
+  }
+
+  .redes-sociais__img{
+    margin-top: 1rem;
+    margin-bottom: .8rem;
+    height: 8vh;
+  }
+  .redes-sociais__titulo{
+    font-size: 18px;
+  }
+
+  .footer__copy-texto {
+    font-size: 13px;
+    color: #c4c4c4;
+    font-weight: lighter;
+    margin-top: 3rem;
+    padding: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* MOBILE AQUI */
+@media (max-width: 425px) {
+  /* HEADER BANNER */
+  .banner {
+    border: 2px solid white;
+    background: url(../img/Banner-bg2.png) center no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: auto;
+    align-items: center;
+    padding: 20px;
+    color: white;
+  }
+  .banner__titulo {
+    font-size: 3.6rem;
+  }
+  .banner__subtitulo {
+    font-size: 1.6rem;
+  }
+  .btn {
+    border-radius: 3rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  /* SEÇÃO SOBRE */
+
+  .sobre-habilidades{
+    display: initial;
+    padding-right: 10mm;
+    width: 90%;
+    line-height: 1.4;
+  }
+
+  .sobre-habilidades__titulo{
+    margin-left: 10mm;
+    margin-top: 10mm;
+  }
+
+  .sobre-habilidades__lista{
+    margin-left: 10mm;
+    margin-top: 5mm;
+    margin-bottom: -10px
+  }
+
+  .sobre__titulo {
+    margin-top: -6rem;
+    font-size: 2.5rem;
+    color: #C4C4C4;
+    padding-left: 10mm;
+    padding-right: 10mm;
+  }
+
+  .sobre-descricao__destaque {
+    font-size: 1.6rem;
+  }
+
+  .sobre-descricao__texto {
+    font-size: 1.4rem;
+  }
+
+  .sobre-descricao{
+    display: block;
+    padding-left: 10mm;
+    padding-right: 10mm;
+    width: 90%;
+    line-height: 1.4;
+  }
+
+
+  /* REDES SOCIAIS */
+.footer {
+  text-align: center;
+  margin-top: 10mm;
+}
+
+.redes-sociais__link {
+  align-items: center;
+  justify-content: center;
+  padding: 10mm;
+  padding: right 10;mm;
+  display: inline-block;
+  width: 40%;
+  height: 25%;
+  background-color: #7E459B;
+  padding: 1rem 1rem 15rem 1rem;
+  margin-top: 1rem;
+}
+
+.redes-sociais__img{
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  height: 7vh;
+}
+.redes-sociais__titulo{
+  font-size: 18px;
+}
+
+.footer__copy-texto {
+  font-size: 13px;
+  color: #c4c4c4;
+  font-weight: lighter;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
